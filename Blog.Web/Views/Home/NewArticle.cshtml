@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "New Article";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    @Styles.Render("~/Content/NewArtcile.css")
+}
+<div class="col-4 my-item">
+    <form action="NewArticle" method="post">
+        <p>Heading: </p>
+        <p><input type="text" placeholder="Heading" required="" name="heading" /></p>
+        <p>Text: </p>
+        <p><input type="text" placeholder="Text" required="" name="text" /></p>
+        <p>Tags</p>
+        <p><input type="text" required="" placeholder="Tags" name="tag"></p>
+        <p><input type="submit" name="Add" /></p>
+    </form>
+</div>

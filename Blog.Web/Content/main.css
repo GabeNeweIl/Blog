@@ -1,0 +1,38 @@
+﻿* {
+    margin: 0;
+}
+
+.logo {
+    padding-right: 10px;
+}
+
+.main {
+    margin: 90px auto;
+    width: 100%;
+}
+
+.my-item {
+    margin: 100px auto;
+}
+
+.tit {
+    overflow: hidden; /* Обрезаем содержимое */
+    padding: 5px; /* Поля */
+    text-overflow: ellipsis; /* Многоточие */
+}
+.card {
+    margin: 20px 0;
+    width: 150%;
+}
+.my-card {
+    width: 100%;
+    margin: 0 0;
+}
+.vote-card {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+.guest-card {
+    margin: 20px 0;
+}

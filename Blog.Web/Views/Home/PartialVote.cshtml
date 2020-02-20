@@ -1,0 +1,9 @@
+﻿@using Blog.DAL.Data
+<form method="post" action="~/HomeController/Voting">
+    <h6>Опрос: какого ты пола, мой читател?</h6>
+    @foreach(var vote in ViewBag.Votes)
+    {
+        <p>@vote.Name: @vote.Count</p>
+    }
+    <input type="submit" value="Vote" />
+</form>

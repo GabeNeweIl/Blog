@@ -1,0 +1,17 @@
+﻿@using Blog.DAL.Data
+@model Tag
+
+@{
+    ViewBag.Title = "Article";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-4 my-item">
+    <h2>Tag: @Html.DisplayFor(model => model.Name)</h2>
+        @foreach (Article a in Model.Articles)
+        {
+            <h4>@a.Heading</h4>
+            <p>@a.Text</p>
+            <p>@a.Publish</p>
+        }
+</div>

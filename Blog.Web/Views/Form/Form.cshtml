@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-4 my-item">
+    <form method="post" action="Form">
+        <p>Your Name</p><input required="" type="text" name="name" />
+        <p>Your Age</p><input required="" type="number" name="age" />
+        <p>Yout Sex</p>
+        <p>@Html.RadioButton("sex", "male") Male</p>
+        <p>@Html.RadioButton("sex", "female") Female</p>
+        <p>Your Pet</p>
+        <p>@Html.CheckBox("cat", false) Cat</p>
+        <p>@Html.CheckBox("dog", false) Dog</p>
+        <p>@Html.CheckBox("another", false) Ahother</p>
+        <p>@Html.CheckBox("none", true) None</p>
+        <input type="submit" name="Send" />
+    </form>
+</div>
+

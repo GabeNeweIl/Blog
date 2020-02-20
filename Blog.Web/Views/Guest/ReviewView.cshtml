@@ -1,0 +1,28 @@
+﻿@using Blog.DAL.Data
+@{
+    Layout = ViewBag.Title = "Guest page";
+    Layout = "~/Views/Shared/_Layout.cshtml"; ;
+}
+
+<div class="col-4 my-item">
+    <div class="card">
+    
+    @foreach (var review in Model)
+    {
+        <div class="card-header">
+            <h3>@review.Name</h3>
+        </div>
+        <div class="card-body">
+            <p>@review.Text</p>
+            <p>@review.Publish</p>
+        </div>
+    }
+    </div>
+    <form action="ReviewView" method="post">
+        <p>Name: </p>
+        <p><input type="text" required="" placeholder="Your Name" name="name" /></p>
+        <p>Text: </p>
+        <p><input type="text" required="" placeholder="Your Text" name="text" /></p>
+        <p><input type="submit" value="Send" /></p>
+    </form>
+</div>
